@@ -6,7 +6,7 @@ require 'rake'
 require 'rake/testtask'
 require 'rake/contrib/rubyforgepublisher'
 
-PKG_VERSION = "0.12.1"
+PKG_VERSION = "0.12.2"
 PKG_NAME = "ebayapi"
 PKG_FILE_NAME = "#{PKG_NAME}-#{PKG_VERSION}"
 
@@ -116,7 +116,7 @@ spec = Gem::Specification.new do |s|
   s.email = "codyfauser@gmail.com"
   s.homepage = "http://ebayapi.rubyforge.org"
   s.add_dependency('xml-mapping', '~> 0.8.0')
-  s.add_dependency('money', '= 1.7.1')
+  s.add_dependency('money', '~> 2.2.0')
 end
 
 Gem::PackageTask.new(spec) do |p|
