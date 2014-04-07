@@ -10,9 +10,6 @@ module Ebay
         self.class.to_s.split('::').last.gsub(/Request$/, '')
       end
 
-      def requester_credentials
-        XMLRequesterCredentials.new(:ebay_auth_token => auth_token)
-      end
     end
   end
 end
