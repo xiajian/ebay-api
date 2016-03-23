@@ -97,8 +97,8 @@ end
 Rake::RDocTask.new { |rdoc|
   rdoc.rdoc_dir = 'doc'
   rdoc.title    = "eBayAPI Ruby client for the eBay unified schema XML API"
-  rdoc.options << '--line-numbers' << '--inline-source' << '--main=README'
-  rdoc.rdoc_files.include('README', 'CHANGELOG')
+  rdoc.options << '--line-numbers' << '--inline-source' << '--main=README.md'
+  rdoc.rdoc_files.include('README.md', 'CHANGELOG')
   rdoc.rdoc_files.include('lib/**/*.rb')
   rdoc.rdoc_files.exclude('lib/ebay/schema')
   rdoc.rdoc_files.exclude('lib/support')
